@@ -122,7 +122,7 @@ class Lecture_Controller extends Controller
                 $errorMessage = $response->json();
                 return back()->with('error', $errorMessage['message'] ?? $errorMessage);
             }
-            return redirect()->Route('sick_Applications');
+            return redirect()->Route('Lecturer_Dashboard');
             //$data = $response->json();
         } catch (\Throwable $th) {
             //throw $th;
